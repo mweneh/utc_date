@@ -6,12 +6,12 @@ app = fastapi.FastAPI()
 
 @app.get("/get_info")
 def get_info(slack_name: str, track: str):
-  slack_name = "Ongaro"
+  slack_name = "David Ongaro"
   track = "Backend"
   current_day = datetime.datetime.now().strftime("%A")
   utc_time = datetime.datetime.now().utcnow().isoformat()
-  github_file_url = "https://github.com/username/repo/blob/main/file_name.ext"
-  github_repo_url = "https://github.com/username/repo"
+  github_file_url = "https://github.com/mweneh/utc_date/blob/main/main.py"
+  github_repo_url = "https://github.com/mweneh/utc_date"
 
   info = {
     "slack_name": slack_name,
