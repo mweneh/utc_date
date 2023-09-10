@@ -6,7 +6,7 @@ app = fastapi.FastAPI()
 
 @app.get("/get_info")
 def get_info(slack_name: str, track: str):
-  slack_name = "David Ongaro"
+  slack_name = "ongaro"
   track = "Backend"
   current_day = datetime.datetime.now().strftime("%A")
   utc_time = datetime.datetime.now().utcnow().isoformat()
