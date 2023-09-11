@@ -4,9 +4,9 @@ import json
 
 app = fastapi.FastAPI()
 
-@app.get("/get_info")
+@app.get("/api")
 def get_info(slack_name: str, track: str):
-  slack_name = "ongaro"
+  slack_name = "Ongaro David"
   track = "Backend"
   current_day = datetime.datetime.now().strftime("%A")
   utc_time = datetime.datetime.now().utcnow().isoformat()
